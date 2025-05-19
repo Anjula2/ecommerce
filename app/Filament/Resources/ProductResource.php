@@ -39,7 +39,7 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('price'),
                 Tables\Columns\ImageColumn::make('image')
                        ->label('Image')
-                       ->size(50, 50)
+                       ->size(50)
                        ->url(fn ($record) => asset('storage/' . $record->image)),
             ])
             ->filters([
