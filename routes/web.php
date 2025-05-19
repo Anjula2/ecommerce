@@ -10,7 +10,6 @@ Route::get('/', function () {
 
 
 Route::get('/', [ProductController::class, 'index'])
-    ->middleware(['auth', 'verified'])
     ->name('home');
 
 
